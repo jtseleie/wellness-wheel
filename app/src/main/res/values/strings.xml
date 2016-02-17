@@ -1,0 +1,75 @@
+<resources>
+    <string name="app_name">Wellness Wheel</string>
+    <string name="action_settings">Settings</string>
+    <string name="Statement1">I eat a balanced nutritional diet</string>
+    <string name="Statement2">I exercise at least 3 times per week</string>
+    <string name="Statement3">Sex is enjoyable and I practice safe sex</string>
+    <string name="Statement4">I use alcohol in moderation, am a non-smoker and avoid street drugs</string>
+    <string name="Statement5">I am generally free from illness</string>
+    <string name="Statement6">I am a reasonable weight for my height</string>
+    <string name="Statement7">I have a solid balance between saving for the future and spending for the present</string>
+    <string name="Statement8">My beliefes/values surrounding money are harmonious with my behaviour</string>
+    <string name="Statement9">My extended family/life partners and I have similar money beliefs and practices</string>
+    <string name="Statement10">I use money positively (e.g. little or no gambling, or excessive massing of goods)</string>
+    <string name="Statement11">My significant others would say that I have a healthy attitude towards money</string>
+    <string name="Statement12">I have financial plans for the future</string>
+    <string name="Statement13">I have specific intellectual goals e.g. learning a new language</string>
+    <string name="Statement14">I pursue mentally stimluating interests or hobbies</string>
+    <string name="Statement15">I am generally satisfied with my vocation/retirement</string>
+    <string name="Statement16">I have positive thoughts (low degree of negativity and cynicism)</string>
+    <string name="Statement17">I would describe myself as a life long learner</string>
+    <string name="Statement18">I commit time and energy to professional and self-development</string>
+    <string name="Statement19">I have a sense of fun and laughter</string>
+    <string name="Statement20">I am able to feel and lable my feelings</string>
+    <string name="Statement21">I express my feelings appropriately</string>
+    <string name="Statement22">I have a sense of control in my life and I am able to adapt to change</string>
+    <string name="Statement23">I am able to comfort or console myself when I am troubled</string>
+    <string name="Statement24">Others would describe me as emotionally stable</string>
+    <string name="Statement25">I am able to resolve conflicts in all areas of my life</string>
+    <string name="Statement26">I am aware of the feelings of others and can respond appropriately</string>
+    <string name="Statement27">I have at least three people with whom I have a close trusting relationship</string>
+    <string name="Statement28">I am aware of and able to set and respect my own and others boundaries</string>
+    <string name="Statement29">I have satisfying social interaction with others</string>
+    <string name="Statement30">I have a sense of belonging/not being isolated</string>
+    <string name="Statement31">I practice meditation, pray or engage in some type of growth practice</string>
+    <string name="Statement32">I have a general sense of serenity</string>
+    <string name="Statement33">I have faith in a higher power</string>
+    <string name="Statement34">I have a sense of meaning and purpose in my life</string>
+    <string name="Statement35">I trust others and am able to forgive others and myself and let go</string>
+    <string name="Statement36">Principles/ethics/morals provide guides for my life</string>
+    <string name="wwIntro">When our life is in equilibrium there is a balance between opposing forces; opposing forces like the desire to lay on the couch and the need to get up and exercise;
+        the draw of being with friends at a social gathering and the yearning to be alone in nature; the drive to learn and achieve and the requirement to "just" be ourselves, etc.\n
+        \nEach day we make choices about how we live our lives and use our energy. Utlimately this is our choice even at the most painful times such as during illness.
+        Sometimes these choices become unconscious, derived from a decision we took months or even years ago. An example might include the work we do today being the result of career choices made in our teens.\n
+        \nWhat is clear is that our lives are most satisfying when we have achieved a balance between the social, emotional, intellectual, physical, spiritual and financial/material aspects of who we are.
+        It makes sense to review our life occasionally and then choose to change or re-confirm to ourselves that what we are doing is our conscious choice.\n
+        \nRobin Robertson and Gisele Microys created this instrument in 1998 as a way of helping people assess their current life balance. It has since been used by hundreds of people.
+        The instrument was revised in 2001 based on learning and experience by the authors from facilitating groups and session on Life Balance, consulting to organizations, coaching in the workplace, and counselling individuals in psychotherapy.\n
+    </string>
+    <string name="wwIntro1">When our life is in equilibrium there is a balance between opposing forces; opposing forces like the desire to lay on the couch and the need to get up and exercise;
+        the draw of being with friends at a social gathering and the yearning to be alone in nature; the drive to learn and achieve and the requirement to "just" be ourselves, etc.
+        </string>
+    <string name="wwIntro2">
+        Each day we make choices about how we live our lives and use our energy. Ultimately this is our choice even at the most painful times such as during illness.
+        Sometimes these choices become unconscious, derived from a decision we took months or even years ago. An example might include the work we do today being the result of career choices made in our teens.</string>
+    <string name="wwIntro3">
+        What is clear is that our lives are most satisfying when we have achieved a balance between the social, emotional, intellectual, physical, spiritual and financial/material aspects of who we are.
+        It makes sense to review our life occasionally and then choose to change or re-confirm to ourselves that what we are doing is our conscious choice.</string>
+    <string name="wwIntro4">
+        Robin Robertson and Gisele Microys created this instrument in 1998 as a way of helping people assess their current life balance. It has since been used by hundreds of people.
+        The instrument was revised in 2001 based on learning and experience by the authors from facilitating groups and session on Life Balance, consulting to organizations, coaching in the workplace, and counselling individuals in psychotherapy.</string>
+    <string name="newUser">New User</string>
+    <string name="title_activity_question">Statement 1</string>
+    <string name="title_activity_intro">Welcome</string>
+    <string name="strCreateNewWheel">Create New Wheel</string>
+    <string name="strViewPast">View Past Wheels</string>
+
+    <string name="title_activity_splash_screen">SplashScreen</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="instructionsHeader">Instructions</string>
+    <string name="instructions">Read each statement and use the progress bar to indicate how much you agree with each statement.\n
+        \nFor example if the statement is I eat a balanced diet; and you feel like you do this 100 of the time, slide the progress bar to 100\n
+        \nWhen you are ready to start you can click the Add Wheel icon in the top right. Your wheel will be generated after youve answered all the questions. </string>
+    <string name="introHeader">Life Balance Assessment and Action Planning Guide\n - The Wellness Wheel</string>
+</resources>

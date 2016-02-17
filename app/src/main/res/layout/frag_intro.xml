@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/background_light"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.hsport.catalog.IntroActivity">
+
+
+    <TextView
+        android:id="@+id/introHeaderText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/introHeader"
+        android:background="@color/primary"
+        android:textColor="@color/icons"
+        android:textStyle="bold"
+        android:textSize="22dp"
+        android:gravity="center"
+        style="@style/Base.TextAppearance.AppCompat.Headline" />
+    <ScrollView
+        android:id="@+id/scrlIntro1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/introBodyText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/primary_text"
+            android:text="@string/wwIntro"
+            android:textSize="18dp" />
+
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="colorPrimary">#3F51B5</color>-->
+    <!--<color name="colorPrimaryDark">#21329e</color> &lt;!&ndash; for notification bar &ndash;&gt;-->
+    <!--<color name="colorAccent">#FF4081</color>-->
+
+    <!--Backgrounds and Toolbars eg-->
+    <color name="primary">#03A9F4</color>
+
+    <!--Status bar for example-->
+    <color name="primary_dark">#0288D1</color>
+
+    <!--Accent Text on Primary Color Background-->
+    <color name="primary_light">#B3E5FC</color>
+
+    <!--Main background for dark text items-->
+    <color name="background_light">#f9f9f9</color>
+
+    <!--Buttons, dividing bars, progress bars, etc.-->
+    <color name="accent">#FFEB3B</color>
+
+    <!--Regular text for light background-->
+    <color name="primary_text">#212121</color>
+
+    <!--Accent Text for light background-->
+    <color name="secondary_text">#727272</color>
+
+    <!--Icons/Regular Text on Primary Background-->
+    <color name="icons">#FFFFFF</color>
+
+    <!--Dividers-->
+    <color name="divider">#B6B6B6</color>
+
+    <color name="black_overlay">#66000000</color>
+</resources>

@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.hsport.catalog.IntroActivity">
+
+    <item
+        android:id="@+id/actionNewWheel"
+        android:orderInCategory="100"
+        android:title="@string/strCreateNewWheel"
+        android:icon="@mipmap/ic_add_wheel"
+        app:showAsAction="always"
+
+        />
+
+    <item
+        android:id="@+id/actionViewPast"
+        android:orderInCategory="100"
+        android:title="@string/strViewPast"
+        app:showAsAction="never"
+        />
+</menu>
