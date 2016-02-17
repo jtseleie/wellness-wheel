@@ -38,11 +38,6 @@ public class QuestionActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_question);
 
-//        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-//        setSupportActionBar(toolbar);
-//        getSupportActionBar().show();
-//        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
 
 //        Viewpager stuff here
         mPager = (ViewPager) findViewById(R.id.questionPager);
@@ -54,20 +49,23 @@ public class QuestionActivity extends AppCompatActivity {
         final SharedPreferences.Editor editor = sharedpreferences.edit();
 
         editor.putInt(FRAG_NUMBER, 0);
+        editor.commit();
 
 //        Code to reference the other activity with the percent bar
         LayoutInflater inflater = getLayoutInflater();
         LinearLayout tmpView = (LinearLayout) inflater.inflate(R.layout.frag_question, null);
-        SeekBar tmpSeek = (SeekBar) tmpView.findViewById(R.id.seekBar);
 
 //        Hobo if to check the initial screen value, onPageSelected doesn't proc first run through
         if (firstRun == false) {
             firstRun = true;
             Log.d(QuestionActivity.class.getSimpleName(), "QuestionActivityCheat " + Integer.toString(0));
+            for (int i=0; i<36; i++){
+                editor.putInt("strWedge" + Integer.toString(i), 0);
+            }
             if (sharedpreferences.contains("strWedge0")) {
-                editor.putInt("strWedge0", tmpSeek.getProgress());
+                editor.putInt("strWedge0", 0);
             } else {
-                editor.putInt("strWedge0", tmpSeek.getProgress());
+                editor.putInt("strWedge0", 0);
             }
             editor.commit();
         }
@@ -77,7 +75,6 @@ public class QuestionActivity extends AppCompatActivity {
 
             LayoutInflater inflater = getLayoutInflater();
             View tmpView = inflater.inflate(R.layout.frag_question, null);
-            SeekBar tmpSeek = (SeekBar) tmpView.findViewById(R.id.seekBar);
 
             @Override
             public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
@@ -89,7 +86,6 @@ public class QuestionActivity extends AppCompatActivity {
 
 //                editor.putInt("strWedge" + Integer.toString(position), tmpSeek.getProgress());
                 editor.putInt(FRAG_NUMBER, position);
-                Log.d(QuestionActivity.class.getSimpleName(), "strWedge value " + Integer.toString(tmpSeek.getProgress()));
                 editor.commit();
             }
 

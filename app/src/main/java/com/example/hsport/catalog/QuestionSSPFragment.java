@@ -19,7 +19,6 @@ public class QuestionSSPFragment extends Fragment {
 
 
     public static final String ARG_QPAGE = "page";
-    private static final Integer wheelValue = 50;
     private static final String FRAG_NUMBER = "intFragmentNumber";
     private int mPageNumber;
 
@@ -37,15 +36,21 @@ public class QuestionSSPFragment extends Fragment {
         sharedpreferences = this.getActivity().getSharedPreferences(wheelPrefs, Context.MODE_PRIVATE);
         final SharedPreferences.Editor editor = sharedpreferences.edit();
 
-        final String curPage = Integer.toString(sharedpreferences.getInt(FRAG_NUMBER, 0));
-
 
         mySeek.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+            String curPage = Integer.toString(sharedpreferences.getInt(FRAG_NUMBER, 0));
+
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
                 txtQuestionPercent.setText(Integer.toString(progress) + "%");
-                editor.putInt("strWedge" + curPage,progress);
-                editor.commit();
+                curPage = Integer.toString(sharedpreferences.getInt(FRAG_NUMBER,0));
+
+//                Only commit changes if the event was fired by user interaction
+                if (fromUser==true){
+                    editor.putInt("strWedge" + curPage,progress);
+                    editor.commit();
+                }
+
             }
 
             @Override
