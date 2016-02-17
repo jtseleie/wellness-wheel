@@ -69,6 +69,7 @@ public class QuestionActivity extends AppCompatActivity {
             } else {
                 editor.putInt("strWedge0", tmpSeek.getProgress());
             }
+            editor.commit();
         }
         ;
 
@@ -86,9 +87,10 @@ public class QuestionActivity extends AppCompatActivity {
             @Override
             public void onPageSelected(int position) {
 
-                editor.putInt("strWedge" + Integer.toString(position), tmpSeek.getProgress());
+//                editor.putInt("strWedge" + Integer.toString(position), tmpSeek.getProgress());
                 editor.putInt(FRAG_NUMBER, position);
                 Log.d(QuestionActivity.class.getSimpleName(), "strWedge value " + Integer.toString(tmpSeek.getProgress()));
+                editor.commit();
             }
 
             @Override
@@ -112,7 +114,8 @@ public class QuestionActivity extends AppCompatActivity {
         sharedpreferences = getSharedPreferences(wheelPrefs, Context.MODE_PRIVATE);
 
         //noinspection SimplifiableIfStatement
-        Toast.makeText(this, "Number is " + sharedpreferences.getInt("strWedge" + Integer.toString(sharedpreferences.getInt(FRAG_NUMBER,0)),10), Toast.LENGTH_LONG).show();
+        String strPageNum = Integer.toString(sharedpreferences.getInt(FRAG_NUMBER, 0));
+        Toast.makeText(this, "Number is " + sharedpreferences.getInt("strWedge" + strPageNum,10), Toast.LENGTH_LONG).show();
 
         return super.onOptionsItemSelected(item);
     }
