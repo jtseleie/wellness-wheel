@@ -59,7 +59,7 @@ public class QuestionActivity extends AppCompatActivity {
         if (firstRun == false) {
             firstRun = true;
             Log.d(QuestionActivity.class.getSimpleName(), "QuestionActivityCheat " + Integer.toString(0));
-            for (int i=0; i<36; i++){
+            for (int i = 0; i < 36; i++) {
                 editor.putInt("strWedge" + Integer.toString(i), 0);
             }
             if (sharedpreferences.contains("strWedge0")) {
@@ -110,8 +110,17 @@ public class QuestionActivity extends AppCompatActivity {
         sharedpreferences = getSharedPreferences(wheelPrefs, Context.MODE_PRIVATE);
 
         //noinspection SimplifiableIfStatement
-        String strPageNum = Integer.toString(sharedpreferences.getInt(FRAG_NUMBER, 0));
-        Toast.makeText(this, "Number is " + sharedpreferences.getInt("strWedge" + strPageNum,10), Toast.LENGTH_LONG).show();
+        switch (id) {
+            case R.id.actionDebugPage:
+                String strPageNum = Integer.toString(sharedpreferences.getInt(FRAG_NUMBER, 0));
+                Toast.makeText(this, "Number is " + sharedpreferences.getInt("strWedge" + strPageNum, 10), Toast.LENGTH_LONG).show();
+                break;
+            case R.id.actionDrawWheel:
+                Intent intent = new Intent(this, WheelDisplay.class);
+                startActivity(intent);
+                break;
+        }
+
 
         return super.onOptionsItemSelected(item);
     }

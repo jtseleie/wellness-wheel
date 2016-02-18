@@ -8,6 +8,13 @@
         android:orderInCategory="100"
         android:title="Check it"
         app:showAsAction="never"
+    />
+
+    <item
+        android:id="@+id/actionDrawWheel"
+        android:orderInCategory="100"
+        android:title="Show Wheel"
+        app:showAsAction="never"
 
         />
 
