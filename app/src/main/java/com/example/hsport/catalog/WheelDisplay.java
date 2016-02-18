@@ -30,22 +30,11 @@ public class WheelDisplay extends AppCompatActivity {
     }
 
     private Bitmap truncateBitmap(int iAmount, Bitmap bmpTruncate) {
+        if(iAmount==0) return Bitmap.createBitmap(bmpTruncate,0,0,10, bmpTruncate.getHeight());
         float bitamount = (float) (bmpTruncate.getWidth() * iAmount/100);
         int bitamountfinal = (int) bitamount;
 
         return Bitmap.createBitmap(bmpTruncate,0,0,bitamountfinal,bmpTruncate.getHeight());
-    }
-
-    public static Bitmap loadBitmap(Context context, String filename){
-        AssetManager assets = context.getResources().getAssets();
-        InputStream buf = null;
-        try {
-            buf = new BufferedInputStream(assets.open(filename));
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        Bitmap bitmap = BitmapFactory.decodeStream(buf);
-        return bitmap;
     }
 
     private float getPieCoordinates (int position){
