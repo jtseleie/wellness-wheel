@@ -58,7 +58,7 @@ public class WheelDisplay extends AppCompatActivity {
         sharedpreferences = getSharedPreferences(wheelPrefs, Context.MODE_PRIVATE);
         final SharedPreferences.Editor editor = sharedpreferences.edit();
 
-        Bitmap myBitmap = BitmapFactory.decodeResource(getResources(),R.drawable.tempwheel) ;
+        Bitmap myBitmap = BitmapFactory.decodeResource(getResources(),R.drawable.emptywheel) ;
         Bitmap bmpYellowWedge = BitmapFactory.decodeResource(getResources(),R.drawable.yellowwedge);
         Bitmap bmpGreenWedge = BitmapFactory.decodeResource(getResources(),R.drawable.greenwedge);
         Bitmap bmpPurpleWedge = BitmapFactory.decodeResource(getResources(),R.drawable.purplewedge);

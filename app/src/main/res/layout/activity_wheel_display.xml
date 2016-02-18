@@ -15,6 +15,6 @@
         android:id="@+id/FinishedWheel"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
-        android:src="@drawable/tempwheel"
+        android:src="@drawable/emptywheel"
  />
 </RelativeLayout>
